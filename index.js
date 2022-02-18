@@ -26,7 +26,7 @@ io.on("connection", function (socket) {
   });
 
   socket.on("DOMEvent", (msg) => {
-    console.log("DOMEvent", msg);
+    console.log("DOMEvent", socket.id , msg);
   });
 });
 
