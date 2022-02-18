@@ -1,5 +1,6 @@
 var { Server } = require("socket.io");
 var io = new Server({ cors: { origin: "*" }, serveClient: false });
+const port = process.env.PORT || 3000;
 
 io.on("connection", function (socket) {
   console.log("New connection");
